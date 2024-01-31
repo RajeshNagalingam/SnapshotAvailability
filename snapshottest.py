@@ -1,7 +1,7 @@
 import boto3
 from datetime import datetime
 
-def check_snapshots_after_date(region_name='your-region', tag_key='SchedulerID', tag_value='your-tag-value', user_date='2023-01-01'):
+def check_snapshots_after_date(region_name='your-region', tag_key='BackupID', tag_value='your-tag-value', user_date='2023-01-01'):
     # Convert user input date string to a datetime object
     user_date_datetime = datetime.strptime(user_date, '%Y-%m-%d')
 
